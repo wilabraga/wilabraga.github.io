@@ -1,29 +1,29 @@
+.name {
+  text-align: center;
+  width: 100%;
+}
 
-/* https://www.w3schools.com/howto/howto_js_topnav.asp */
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  width: 100%
+}
+
+.topnav a {
+  color: #2c2929;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  text-decoration:underline;
+  color: #4fbd4b
+}
+
+.topnav a.active {
+  text-decoration: underline;
+}
