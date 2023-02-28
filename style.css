@@ -1,6 +1,9 @@
 .name {
-  text-align: center;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  padding-bottom:4px;
 }
 
 .topnav {
@@ -14,9 +17,9 @@
   color: #2c2929;
   display: inline-block;
   text-align: center;
-  padding: 14px 30px;
+  padding: 14px 45px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 30px;
 }
 
 .topnav a:hover {
@@ -35,4 +38,8 @@
   margin: 0 auto;
   width: 80%;
   height: 800px;
+}
+
+#sketch-holder {
+  text-align:center;
 }
