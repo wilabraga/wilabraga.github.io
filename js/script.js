@@ -18,15 +18,21 @@ function writeCommand(line) {
 }
 
 function runLoader() {
+    let loaded = document.getElementById("loaded");
+    document.body.style.backgroundColor = "#380C2A";
+    loaded.style.display = "none";
     writeCommand(0);
 }
 
 function hideLoader() {
-    let loader = document.getElementById("loader");
-    let loaded = document.getElementById("loaded");
-    loader.style.display = "none";
-    loaded.style.display = "block";
-    document.body.style.backgroundColor = "#1E1E1E";
+    
+    setTimeout(() => {
+        let loader = document.getElementById("loader");
+        let loaded = document.getElementById("loaded");
+        loader.style.display = "none";
+        loaded.style.display = "block";
+        document.body.style.backgroundColor = "#1E1E1E";
+    }, 1000);
 }
 
 let term = document.getElementsByClassName("terminalLine");

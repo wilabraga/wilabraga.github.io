@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <head>
-	<title>My Page</title>
+	<title>wila_website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<img src="assets/name.png" class="name">
-	<div class="topnav">
-		<a href="index.html">Home</a>
-		<a href="projects.html">Projects</a>
-		<a href="hobbies.html">Hobbies</a>
-		<a class="active" href="resume.html">Resume</a>
-	</div> 
-	<iframe src="assets/resume_02_22_23.pdf" class="resume"></iframe>
+	<div id="loaded">
+		<div id="sidenav">
+			<p>WILA_WEBSITE</p>
+			<a href="index.html">index.html</a>
+			<a href="projects.html">projects.html</a>
+			<a href="hobbies.html">hobbies.html</a>
+			<a href="resume.html" class="focus">resume.html</a>
+		</div>
+		<div id="content">
+			<iframe src="assets/Resume.pdf" class="resume"></iframe>
+		</div>
+	</div>
 </body>
