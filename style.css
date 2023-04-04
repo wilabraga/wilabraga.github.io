@@ -1,45 +1,54 @@
-.name {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
-  padding-bottom:4px;
+body {
+    background-color: #380C2A;
+    color: #FFF;
 }
 
-.topnav {
-  overflow: hidden;
-  display: inline-block;
-  text-align: center;
-  width: 100%
+#loader {
+    display: block;
+
 }
 
-.topnav a {
-  color: #2c2929;
-  display: inline-block;
-  text-align: center;
-  padding: 14px 45px;
-  text-decoration: none;
-  font-size: 30px;
+#loaded {
+    display: none;
+    color: #FFF;
 }
 
-.topnav a:hover {
-  text-decoration:underline;
-  color: #4fbd4b
+.prefix {
+    color: #2A9D68;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: monospace;
 }
 
-.topnav a.active {
-  text-decoration: underline;
+.colon {
+    color: #FFF;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: monospace;
 }
 
-.resume {
-  display: block;
-  border:none;
-  padding-top: 50px;
-  margin: 0 auto;
-  width: 80%;
-  height: 800px;
+.path {
+    color: #1C4487;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: monospace;
 }
 
-#sketch-holder {
-  text-align:center;
+.command {
+    color: #FFF;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.terminalLine {
+    display: none;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 15pt;
+    background-color: white;
+    margin-left: 8px;
 }
