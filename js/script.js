@@ -1,8 +1,8 @@
 function writeCommand(line) {
     if (line < commands.length) {
-        term[line].style.display = "block";
+        term[line].style.visibility = "visible";
         let i = 0;
-        let int = setInterval(() => {
+        int = setInterval(() => {
             if (i < commands[line].length) {
                 com[line].innerHTML += commands[line].charAt(i);
                 i++;
@@ -35,9 +35,17 @@ function hideLoader() {
     }, 1000);
 }
 
+function skipLoader() {
+    if (int) {
+        clearInterval(int);
+    }
+    hideLoader();
+}
+
 let term = document.getElementsByClassName("terminalLine");
 let com = document.getElementsByClassName("command");
 let cursor = document.getElementsByClassName("cursor");
+let int;
 
 let commands = [
     "mkdir wila_website",
