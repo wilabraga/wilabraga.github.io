@@ -11,7 +11,7 @@ function writeCommand(line) {
                 cursor[line].style.display = "none";
                 writeCommand(line+1);
             }
-        }, 100);
+        }, 50);
     } else {
         hideLoader();
     }
@@ -32,7 +32,7 @@ function hideLoader() {
         loader.style.display = "none";
         loaded.style.display = "block";
         document.body.style.backgroundColor = "#1E1E1E";
-    }, 1000);
+    }, 300);
 }
 
 function skipLoader() {
