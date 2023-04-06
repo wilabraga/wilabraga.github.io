@@ -96,7 +96,8 @@ body {
 
 #content {
     width: 70%;
-    margin-left: 26%;
+    float: left;
+    margin-left: 5%;
     height: 100%;
     top: 0;
 }
@@ -124,4 +125,5 @@ body {
     height: 30px;
     float: right;
     margin: 12px 20px;
+    cursor: pointer;
 }

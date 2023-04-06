@@ -55,7 +55,7 @@ let commands = [
     "touch hobbies.html",
     "touch resume.html",
     "cd ..",
-    "./do_the_rest.sh",
+    "./populate_sites.sh wila_website",
     "code wila_website"
 ];
 
