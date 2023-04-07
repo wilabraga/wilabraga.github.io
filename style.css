@@ -6,6 +6,7 @@ body {
     background-color: #1E1E1E;
     color: #FFF;
     height: 100%;
+    margin: 0 0;
 }
 
 #loader {
@@ -21,8 +22,7 @@ body {
     font-size: 13pt;
     color: #FFF;
     height: 100%;
-    top: 0;
-    left: 0;
+    margin: 0 0;
 }
 
 .prefix {
@@ -52,6 +52,7 @@ body {
 .terminalLine {
     visibility: hidden;
     display: block;
+    margin-left: 15px;
 }
 
 .cursor {
@@ -63,23 +64,22 @@ body {
 }
 
 #sidenav {
-    width: 25%;
-    min-width: 150px;
-    max-width: 250px;
+    width: 250px;
     height: 100%;
     background-color: #252526;
     float: left;
 }
 
 #sidenav p {
-    padding: 8px 10px;
+    padding: 15px 2px;
+    margin: 0 0;
 }
 
 #sidenav a {
     display: block;
     text-decoration: none;
     font-size: 12pt;
-    padding: 5px 30px;
+    padding: 5px 40px;
 }
 
 #sidenav a:visited {
@@ -95,17 +95,14 @@ body {
 }
 
 #content {
-    width: 70%;
-    float: left;
-    margin-left: 5%;
+    margin-left: 80px;
     height: 100%;
-    top: 0;
+    width: calc(100% - 100px)
 }
 
 .resume {
-    width: 100%;
     height: 100%;
-    min-height: 600px;
+    width: 100%
 }
 
 #terminal {
@@ -126,4 +123,80 @@ body {
     float: right;
     margin: 12px 20px;
     cursor: pointer;
+}
+
+#lineNumbers {
+    width: 60px;
+    margin-left: 20px;
+    float: left;
+}
+
+#lineNumbers p{
+    color: #757A6E;
+    margin: 2px 0;
+}
+
+#social {
+    width: 75px;
+    float: left;
+    height: 100%;
+    background-color: #333;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#social img {
+    padding: 7px 0;
+}
+
+#fileScreen {
+    float: left;
+    height: 100%;
+    width: calc(100% - 325px);
+}
+
+#content p {
+    margin: 0 0;
+}
+
+#fileName {
+    width: 100%;
+    height: 40px;
+    background-color: #252526;
+    border-bottom: 2px solid #131313;
+}
+
+#fileName p {
+    background-color: #1E1E1E;
+    margin: 0 0;
+    height: 30px;
+    width: 175px;
+    text-align: center;
+    color: #E19A5C;
+    padding-top: 10px;
+}
+
+#file {
+    padding-top: 10px;
+    height: 100%;
+}
+
+#wilaCaret {
+    margin: 0 5px;
+    padding: 0 0;
+    width: 15px;
+}
+
+.closed {
+    height: 15px;
+    margin-right: 12px;
+}
+
+.open {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.sublink {
+    padding-left: 70px !important;
 }
