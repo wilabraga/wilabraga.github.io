@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    margin: 0 0;
 }
 
 body {
@@ -64,7 +65,9 @@ body {
 }
 
 #sidenav {
-    width: 250px;
+    width: 25%;
+    min-width: 195px;
+    max-width: 250px;
     height: 100%;
     background-color: #252526;
     float: left;
@@ -106,7 +109,7 @@ body {
 }
 
 #terminal {
-    width: 80%;
+    width: calc(100% - 240px);
     float: left;
 }
 
@@ -116,9 +119,7 @@ body {
     font-weight: bold;
     font-size: 15pt;
     border: none;
-    width: 15%;
-    max-width: 200px;
-    min-width: 100px;
+    width: 200px;
     height: 30px;
     float: right;
     margin: 12px 20px;
@@ -156,7 +157,7 @@ body {
 }
 
 #content p {
-    margin: 0 0;
+    margin: 2px 0;
 }
 
 #fileName {
@@ -178,7 +179,7 @@ body {
 
 #file {
     padding-top: 10px;
-    height: 100%;
+    height: calc(100% - 50px);
 }
 
 #wilaCaret {
@@ -199,4 +200,8 @@ body {
 
 .sublink {
     padding-left: 70px !important;
+}
+
+.comment {
+    color: #689955
 }
