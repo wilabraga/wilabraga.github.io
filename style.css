@@ -74,7 +74,7 @@ body {
 
 #sidenav {
     display: block;
-    width: 250px;
+    width: 300px;
     height: 100%;
     background-color: #252526;
     float: left;
@@ -174,7 +174,7 @@ body {
 #fileScreen {
     float: left;
     height: 100%;
-    width: calc(100% - 325px);
+    width: calc(100% - 375px);
 }
 
 #content p {
@@ -192,7 +192,9 @@ body {
     background-color: #1E1E1E;
     margin: 0 0;
     height: 30px;
-    width: 175px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     color: #E19A5C;
     padding-top: 10px;
@@ -231,4 +233,10 @@ body {
 
 .comment {
     color: #689955
+}
+
+.report {
+    width: 100%;
+    height: 900px;
+    border: none;
 }

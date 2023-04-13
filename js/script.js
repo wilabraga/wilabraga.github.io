@@ -60,7 +60,7 @@ function showNav() {
     let fileScreen = document.getElementById("fileScreen");
     sidenav.style.display = "block";
     smallnav.style.display = "none";
-    fileScreen.style.width = "calc(100% - 325px)";
+    fileScreen.style.width = "calc(100% - 375px)";
 }
 
 function afterLoaded() {
