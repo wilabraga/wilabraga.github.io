@@ -128,7 +128,7 @@ body {
 }
 
 #terminal {
-    width: calc(100% - 240px);
+    width: calc(100% - 140px);
     float: left;
 }
 
@@ -138,7 +138,7 @@ body {
     font-weight: bold;
     font-size: 15pt;
     border: none;
-    width: 200px;
+    width: 100px;
     height: 30px;
     float: right;
     margin: 12px 20px;
