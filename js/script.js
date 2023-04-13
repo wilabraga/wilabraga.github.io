@@ -64,12 +64,12 @@ function showNav() {
 }
 
 function afterLoaded() {
-    if (window.innerWidth < 650) {
+    if (window.innerWidth < 1000) {
         hideNav();
     }
     
     window.addEventListener("resize", function(event) {
-        if (window.innerWidth < 650) {
+        if (window.innerWidth < 1000) {
             hideNav();
         }
     })
