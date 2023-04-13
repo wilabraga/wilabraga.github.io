@@ -33,6 +33,9 @@ function hideLoader() {
         loaded.style.display = "block";
         document.body.style.backgroundColor = "#1E1E1E";
     }, 300);
+
+    afterLoaded();
+
 }
 
 function skipLoader() {
@@ -40,6 +43,52 @@ function skipLoader() {
         clearInterval(int);
     }
     hideLoader();
+}
+
+function hideNav() {
+    let sidenav = document.getElementById("sidenav");
+    let smallnav = document.getElementById("smallnav");
+    let fileScreen = document.getElementById("fileScreen");
+    sidenav.style.display = "none";
+    smallnav.style.display = "block";
+    fileScreen.style.width = "calc(100% - 150px)";
+}
+
+function showNav() {
+    let sidenav = document.getElementById("sidenav");
+    let smallnav = document.getElementById("smallnav");
+    let fileScreen = document.getElementById("fileScreen");
+    sidenav.style.display = "block";
+    smallnav.style.display = "none";
+    fileScreen.style.width = "calc(100% - 325px)";
+}
+
+function afterLoaded() {
+    if (window.innerWidth < 650) {
+        hideNav();
+    }
+    
+    window.addEventListener("resize", function(event) {
+        if (window.innerWidth < 650) {
+            hideNav();
+        }
+    })
+    loadLineNumber();
+}
+
+function loadLineNumber() {
+    let lineNum = document.getElementById("lineNumbers");
+    // let fHeight = document.getElementById("fileName").offsetHeight;
+    // let pHeight = document.getElementById("lineNum").offsetHeight;
+    let fHeight = 42 + 10;
+    let pHeight = 25.5;
+    let num = Math.floor((window.innerHeight - fHeight) / pHeight);
+    for (let i = 0; i < num - 1; i++) {
+        const p = document.createElement("p");
+        const text = document.createTextNode(`${i+2}`);
+        p.appendChild(text)
+        lineNum.appendChild(p);
+    }
 }
 
 let term = document.getElementsByClassName("terminalLine");
@@ -58,5 +107,3 @@ let commands = [
     "./populate_sites.sh wila_website",
     "code wila_website"
 ];
-
-runLoader();

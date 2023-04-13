@@ -64,10 +64,17 @@ body {
     margin-left: 4px;
 }
 
+#smallnav {
+    display: none;
+    width: 75px;
+    height: 100%;
+    background-color: #252526;
+    float: left;
+}
+
 #sidenav {
-    width: 25%;
-    min-width: 195px;
-    max-width: 250px;
+    display: block;
+    width: 250px;
     height: 100%;
     background-color: #252526;
     float: left;
@@ -76,6 +83,21 @@ body {
 #sidenav p {
     padding: 15px 2px;
     margin: 0 0;
+    cursor: pointer;
+}
+
+#smallnav p {
+    padding: 15px 2px;
+    margin: 0 0;
+    cursor: pointer;
+}
+
+#smallnav p:hover {
+    background-color: #32323D !important;
+}
+
+#sidenav p:hover {
+    background-color: #32323D !important;
 }
 
 #sidenav a {
@@ -83,18 +105,15 @@ body {
     text-decoration: none;
     font-size: 12pt;
     padding: 5px 40px;
-}
-
-#sidenav a:visited {
     color: white;
 }
 
 #sidenav a:hover {
-    background-color: #32323D;
+    background-color: #32323D !important;
 }
 
 #sidenav a.focus {
-    color: #E19A5C;
+    color: #E19A5C !important;
 }
 
 #content {
@@ -140,7 +159,7 @@ body {
 #social {
     width: 75px;
     float: left;
-    height: 100%;
+    height: calc(100% - 5px);
     background-color: #333;
     text-align: center;
     padding-top: 5px;
@@ -182,10 +201,16 @@ body {
     height: calc(100% - 50px);
 }
 
-#wilaCaret {
+#wilaCaretOpen {
     margin: 0 5px;
     padding: 0 0;
     width: 15px;
+}
+
+#wilaCaretClosed {
+    margin: 0 5px;
+    padding: 0 0;
+    height: 15px;
 }
 
 .closed {
