@@ -74,7 +74,7 @@ body {
 
 #sidenav {
     display: block;
-    width: 300px;
+    width: 325px;
     height: 100%;
     background-color: #252526;
     float: left;
@@ -174,7 +174,7 @@ body {
 #fileScreen {
     float: left;
     height: 100%;
-    width: calc(100% - 375px);
+    width: calc(100% - 400px);
 }
 
 #content p {
