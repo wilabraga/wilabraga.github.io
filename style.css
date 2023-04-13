@@ -124,7 +124,8 @@ body {
 
 .resume {
     height: 100%;
-    width: 100%
+    width: 100%;
+    border: none;
 }
 
 #terminal {
@@ -154,6 +155,7 @@ body {
 #lineNumbers p{
     color: #757A6E;
     margin: 2px 0;
+    height: 24px;
 }
 
 #social {
