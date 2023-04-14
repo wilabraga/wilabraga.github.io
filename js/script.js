@@ -105,6 +105,13 @@ function verticalSocial() {
     social.style.paddingTop = "5px";
     social.style.bottom = "none";
     social.style.position = "relative";
+
+    let sidenav = document.getElementById("sidenav");
+    let smallnav = document.getElementById("smallnav");
+    let fileScreen = document.getElementById("fileScreen");
+    sidenav.style.height = "100%";
+    smallnav.style.height = "100%";
+    fileScreen.style.height = "100%";
     
     for (const child of social.children) {
         child.style.padding = "7px 0";
@@ -119,6 +126,13 @@ function horizontalSocial() {
     social.style.position = "fixed";
     social.style.height = "75px";
     social.style.paddingTop = "0";
+
+    let sidenav = document.getElementById("sidenav");
+    let smallnav = document.getElementById("smallnav");
+    let fileScreen = document.getElementById("fileScreen");
+    sidenav.style.height = "calc(100% - 75px)";
+    smallnav.style.height = "calc(100% - 75px)";
+    fileScreen.style.height = "calc(100% - 75px)";
 
     for (const child of social.children) {
         child.style.padding = "7px 15px";
