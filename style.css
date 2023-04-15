@@ -119,7 +119,8 @@ body {
 #content {
     margin-left: 80px;
     height: 100%;
-    width: calc(100% - 100px)
+    width: calc(100% - 100px);
+    line-height: 26px;
 }
 
 .resume {
@@ -178,7 +179,7 @@ body {
 }
 
 #content p {
-    margin: 2px 0;
+    margin: 0px 0;
 }
 
 #content a {
@@ -241,6 +242,22 @@ body {
 
 .report {
     width: 100%;
-    height: 60%;
+    height: 50%;
     border: none;
+}
+
+.htmlTag {
+    color: #389EDB;
+}
+
+.htmlClass {
+    color: #85D9FB;
+}
+
+.htmlString {
+    color: #C18068 !important;
+}
+
+.json {
+    margin-left: 15px !important;
 }
