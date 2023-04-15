@@ -237,7 +237,7 @@ body {
 }
 
 .comment {
-    color: #689955
+    color: #689955 !important;
 }
 
 .report {

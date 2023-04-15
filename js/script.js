@@ -144,6 +144,9 @@ function loadLineNumber() {
     // let fHeight = document.getElementById("fileName").offsetHeight;
     // let pHeight = document.getElementById("lineNum").offsetHeight;
     let fHeight = 42 + 12;
+    if (window.innerWidth < 1000) {
+        fHeight += 75;
+    }
     let pHeight = 26;
     let num = Math.floor((window.innerHeight - fHeight) / pHeight);
     for (let i = 0; i < num - 1; i++) {
