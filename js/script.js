@@ -26,15 +26,17 @@ function runLoader() {
 
 function hideLoader() {
     
-    let loader = document.getElementById("loader");
-    let loaded = document.getElementById("loaded");
-    loader.style.display = "none";
-    loaded.style.display = "block";
-    document.body.style.backgroundColor = "#1E1E1E";
+    setTimeout(() => {
+        let loader = document.getElementById("loader");
+        let loaded = document.getElementById("loaded");
+        loader.style.display = "none";
+        loaded.style.display = "block";
+        document.body.style.backgroundColor = "#1E1E1E";
+    }, 300);
 
     setTimeout(() => {
         afterLoaded();
-    }, 100);
+    }, 400);
 
 }
 
