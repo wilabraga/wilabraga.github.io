@@ -26,15 +26,15 @@ function runLoader() {
 
 function hideLoader() {
     
-    setTimeout(() => {
-        let loader = document.getElementById("loader");
-        let loaded = document.getElementById("loaded");
-        loader.style.display = "none";
-        loaded.style.display = "block";
-        document.body.style.backgroundColor = "#1E1E1E";
-    }, 300);
+    let loader = document.getElementById("loader");
+    let loaded = document.getElementById("loaded");
+    loader.style.display = "none";
+    loaded.style.display = "block";
+    document.body.style.backgroundColor = "#1E1E1E";
 
-    afterLoaded();
+    setTimeout(() => {
+        afterLoaded();
+    }, 100);
 
 }
 
@@ -149,6 +149,7 @@ function loadLineNumber() {
     // }
 
     let wHeight = document.getElementById("fileScreen").scrollHeight;
+
     if (window.innerHeight > wHeight) {
         wHeight = window.innerHeight;
     }
