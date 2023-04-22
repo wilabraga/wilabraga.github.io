@@ -6,6 +6,8 @@ function writeCommand(line) {
             if (i < commands[line].length) {
                 com[line].innerHTML += commands[line].charAt(i);
                 i++;
+            } else if (i < commands[line].length + 1){
+                i++;
             } else {
                 clearInterval(int);
                 cursor[line].style.display = "none";
